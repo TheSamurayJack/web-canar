@@ -2,7 +2,7 @@
 import MediaCard from "../components/MediaCard.astro";
 ---
 
-<section class="my-10 text-center text-pretty mx-auto">
+<section class="my-10 h-auto text-center text-pretty mx-auto">
   <h1 class="text-4xl font-bold">Conectate con nosotros</h1>
   <h6 class="font-semibold">
     Conoce mas de nosotros y lo que hacemos a traves de nuestras redes
@@ -10,7 +10,10 @@ import MediaCard from "../components/MediaCard.astro";
   <div
     class="p-4 flex flex-col lg:flex-row items-center justify-center mx-auto"
   >
-    <MediaCard title="Instagram">
+    <MediaCard
+      title="Instagram"
+      url="https://www.instagram.com/colprovinciadelcanar/"
+    >
       <svg
         class="w-8"
         xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +25,7 @@ import MediaCard from "../components/MediaCard.astro";
         ></path></svg
       >
     </MediaCard>
-    <MediaCard title="Facebook">
+    <MediaCard title="Facebook" url="https://www.facebook.com/provcanar">
       <svg
         class="w-8"
         slot="svg"
