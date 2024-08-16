@@ -9,9 +9,17 @@ interface Props {
 const { url, title, subtitle } = Astro.props;
 ---
 
-<a href={url} class=`${Astro.props.class} border border-black cursor-pointer`>
+<a
+  href={url}
+  class=`${Astro.props.class} relative border border-black cursor-pointer p-3 rounded-xl overflow-hidden group`
+>
+  <div
+    class="absolute bottom-0 top-0 left-0 h-full w-full
+    bg-gradient-to-b from-transparent from-40% via-[#362115]/50 to-[#152c36]/80"
+  >
+  </div>
   <slot name="image" />
-  <h1>{title}</h1>
-  <h3>{subtitle}</h3>
-  <slot name="content" />
+  <div class="flex h-full w-full items-end text-white">
+    <h2 class="z-20 text-xl font-bold">{title}</h2>
+  </div>
 </a>

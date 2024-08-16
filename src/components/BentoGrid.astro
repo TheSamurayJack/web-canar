@@ -6,14 +6,35 @@ import BentoItem from "../components/BentoItem.astro";
   <div
     class=`w-full max-w-[1400px]
     grid lg:grid-cols-10 auto-rows-[20rem] gap-4
-    mx-auto p-6 md:p-12 lg:p-20`
+    mx-auto px-6 md:px-12 lg:px-20 py-12`
   >
-    <BentoItem url="/" title="EGB Basica" class="col-span-4" />
-    <BentoItem url="/" title="Bachillerato" class="col-span-6 row-span-1" />
+    <BentoItem url="/" title="EGB Basica" class="col-span-10 lg:col-span-4">
+      <img
+        slot="image"
+        src="/c1.webp"
+        alt=""
+        class="absolute inset-0 h-full w-full -z-10 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+      />
+    </BentoItem>
+    <BentoItem url="/" title="Bachillerato" class="col-span-10 lg:col-span-6">
+      <img
+        slot="image"
+        src="/a1.jpg"
+        alt=""
+        class="absolute inset-0 h-full w-full -z-10 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+      />
+    </BentoItem>
     <BentoItem
       url="/"
       title="Proyectos y aplicaciones externas"
       class="col-span-10"
-    />
+    >
+      <img
+        slot="image"
+        src="/b1.jpg"
+        alt=""
+        class="absolute inset-0 h-full w-full -z-10 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+      />
+    </BentoItem>
   </div>
 </section>
