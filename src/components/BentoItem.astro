@@ -1,0 +1,17 @@
+---
+interface Props {
+  class?: string;
+  title: string;
+  subtitle?: string;
+  url: string;
+}
+
+const { url, title, subtitle } = Astro.props;
+---
+
+<a href={url} class=`${Astro.props.class} border border-black cursor-pointer`>
+  <slot name="image" />
+  <h1>{title}</h1>
+  <h3>{subtitle}</h3>
+  <slot name="content" />
+</a>

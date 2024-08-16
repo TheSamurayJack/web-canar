@@ -1,0 +1,19 @@
+---
+import BentoItem from "../components/BentoItem.astro";
+---
+
+<section>
+  <div
+    class=`w-full max-w-[1400px]
+    grid lg:grid-cols-10 auto-rows-[20rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20`
+  >
+    <BentoItem url="/" title="EGB Basica" class="col-span-4" />
+    <BentoItem url="/" title="Bachillerato" class="col-span-6 row-span-1" />
+    <BentoItem
+      url="/"
+      title="Proyectos y aplicaciones externas"
+      class="col-span-10"
+    />
+  </div>
+</section>
