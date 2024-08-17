@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Pagina no Encontrada">
+  <main>
+    <section
+      id="not-found"
+      class="h-[85vh] flex flex-col md:flex-row justify-center items-center md:space-x-16"
+    >
+      <div class="flex flex-col p-12 max-w-3xl text-center md:text-left">
+        <h2 class="text-4xl font-bold">404 Pagina No Encontrada</h2>
+        <p>
+          Verifique que haya escrito la dirección correctamente, regrese a la
+          página anterior o intente utilizar nuestra búsqueda de sitios para
+          encontrar algo específico.
+        </p>
+      </div>
+      <div class="p-12">
+        <div class="backdrop-opacity-60 backdrop-invert bg-white/30"></div>
+        <img src="/bg.jpg" alt="" class="-z-20" />
+      </div>
+    </section>
+  </main>
+</Layout>
